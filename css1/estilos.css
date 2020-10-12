@@ -1,0 +1,185 @@
+*{
+    margin: 5px;
+    padding: 5px;
+    background-color: #b2dfdb;
+    color:  indigo;
+    font-family: cursive;
+    box-sizing: border-box;
+}
+.home{
+    display: flex;
+}
+#contenedor{
+    width:100% ;
+}
+header{
+    padding: 0px;
+    border:4px solid green;
+    border-radius: 15px;
+}
+header a{
+    color:purple;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+header li{
+    display: inline;
+    padding: 0px;
+}
+header nav{
+    margin-top: 10px;
+}
+header .resaltado, header .actual a{
+    color: #065050;
+    font-weight: bold;
+}
+header a:hover{
+    color: #1d82bd;
+    font-weight: bold;
+}
+section #cuenta{
+    width: 25%;
+    height: 60%;
+    margin: 10px;
+    border: 3px solid green;
+    border-radius: 12px;
+    box-shadow: black 0.5em 0.5em 0.3em;
+    text-align: center;
+    overflow: hidden;
+}
+input{
+    width: 90%;
+    height: 35px;
+    border: 2px solid green;
+    margin-bottom: 5px;
+}
+.boton1{
+    height: 40px;
+    background-color: #0c0488;
+    border: 0px;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white; 
+}
+section #aviso{
+    width: 20%;
+    height: 30%;
+    border:1px solid green;
+    transform: rotate(-12deg);
+    background-color: #24d6b0;
+}
+#aviso h2{
+    background-color: #24d6b0;
+}
+#aviso2 h2{
+    background-color: #24d6b0;
+}
+#aviso p{
+    background-color: #24d6b0;
+}
+#aviso2 p{
+    background-color: #24d6b0;
+}
+section #aviso2{
+    width: 20%;
+    height: 30%;
+    border:1px solid green;
+    transform: rotate(10deg);
+    background-color: #24d6b0;
+}
+aside{
+    float: right;
+    margin: auto;
+    width: 70%;
+}
+/* estilos para las cajas*/
+.caja{
+    margin: auto;
+    margin-top: 30px;
+    margin-right: 30px;
+    text-align: center;
+    width: 40%;
+    height: 350px;
+    padding:5px;
+    border: 2px solid green;
+    border-radius: 18px;
+    box-shadow: black 0.5em 0.5em 0.3em;
+    overflow: hidden;
+}
+.caja.caja{
+    float:left;
+}
+.caja img{
+    width: 45%;
+}
+div .caja{
+    background-color: #bdbdbd;
+    background-size: cover;
+}
+.caja h3{
+    background-color:  #bdbdbd;
+    color: indigo;
+}
+.caja p{
+    background-color:  #bdbdbd;
+    color: navy;
+}
+
+/*Estilos para el footer*/
+footer{
+    clear: both;
+    padding: 20px;
+    text-align: center;
+    border-top: 5px solid black;    
+}
+/*Responsive o ajuste de pantallas*/
+@media(max-width:768px){
+    aside,
+    .caja.caja{
+    float:none;
+    text-align: center;
+    width:100%;
+    font-size:20px;
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    form input[type="text"]{
+        width: 90%;
+        margin-bottom: 5px;
+    }
+    input{
+        width: 90%;
+    }
+    img{
+        width: 100%;
+    }
+    #cabecera{
+        width:auto;
+        height: auto;
+        padding: 0px;
+    }
+    div .caja{
+        width: 100%;
+        height: auto;
+    }
+   
+    div #cuenta{
+        width: auto;
+        height: auto;
+        display:inline-block;
+    }
+
+    div #aviso{
+        width: auto;
+        height: 250px;
+        display:inline-block;
+    }
+    div #aviso2{
+        width: auto;
+        height: 250px;
+        display:inline-block;
+    }
+}

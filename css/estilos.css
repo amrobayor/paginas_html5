@@ -1,0 +1,167 @@
+*{
+    margin: 5px;
+    padding:5px;
+    background-color: #fef5e7;
+    color: black;
+    font-family:'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.home{
+    display: flex;
+}
+.contenedor{
+    width:99%;
+    border: 3px solid purple;
+    border-radius: 14px;
+}
+
+/*estilos al encabezado*/
+header img{
+    width: 98%;
+}
+header a{
+    color: purple;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+    width: 100%;
+}
+header li{
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+} 
+header .actual a{
+    color: blueviolet;
+    font-weight: bold;
+}
+header nav{
+    width: 100%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid purple;
+    border-radius:14px;
+    text-align: center;
+    overflow: hidden;
+}
+header .resaltado, header .actual a{
+    color: #65467e;
+    font-weight: bold;
+}
+header a:hover{
+    color: #f563e9;
+    font-weight: bold;
+}
+.hijo{
+    display: flex;
+    width:100%;
+}
+section #caja{
+    border: 3px solid purple;
+    border-radius:14px;
+    text-align: justify;
+    overflow: hidden;
+    width: 95%;
+}
+#caja img{
+    float: left;
+    width:40%;
+    height: 75%;
+}
+section #caja1{
+    border: 3px solid purple;
+    border-radius:14px;
+    text-align: justify;
+    overflow: hidden;
+    width: 95%;
+}
+#caja1 img{
+    float: right;
+    width:40%;
+    height: 75%;
+}
+aside #solicitud{
+    float: right;
+    }
+#solicitud{
+    border: 2px solid purple;
+    border-radius: 9px;
+    text-align:left;
+    width: 300px;
+    height: 580px;
+    overflow: hidden;
+}
+#solicitud h1{
+    text-align: center;
+}
+input{
+    width: 90%;
+    height: 35px;
+    border: 2px solid purple;
+    margin-bottom: 5px;
+}
+.boton1{
+    height: 40px;
+    background-color: #4b0852;
+    border: 0px;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white; 
+}
+#solicitud .boton1{
+    width: 50%;
+    margin-left:80px;
+    margin-right: 80px;
+}
+footer{
+    clear: both;
+    padding: 20px;
+    text-align: center;
+    border-top: 5px solid purple
+}
+/*Responsive o ajuste de pantallas*/
+@media(max-width:768px){
+    aside #solicitud,
+    #caja img,
+    #caja1 img{
+    float:none;
+    text-align: center;
+    width:100%;
+    font-size:20px;
+    }
+    header{
+        width: auto;
+        padding-bottom: 20px;
+    }
+    form input[type="text"]{
+        width: 90%;
+        margin-bottom: 5px;
+    }
+    input{
+        width: 90%;
+    }
+    img{
+        width: 100%;
+    }
+    #cabecera{
+        width:auto;
+        height: auto;
+        padding: 0px;
+    }
+    div #caja{
+        width: 96%;
+        height: auto;
+    }
+    div #caja1{
+        width: 96%;
+        height: auto;
+    }
+   
+    div #solicitud{
+        margin-left: auto;
+        width: auto;
+        height: auto;
+    }
+}
+
